@@ -34,7 +34,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#map-section">Basisinformationen</a>
+              <a
+                class="nav-link"
+                href="#map-section"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Basisinformationen</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -48,12 +54,32 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#route-section">Übersicht</a>
+                  <a
+                    class="dropdown-item"
+                    href="#route-section"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    >Übersicht</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    >Blog</a
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    >Something else here</a
+                  >
                 </li>
               </ul>
             </li>
@@ -74,7 +100,7 @@
             </button>
           </form> -->
         </div>
-        <p id="demo"></p>
+        <p class="d-flex me-2 mt-3" id="timeToGo"></p>
       </div>
     </nav>
     <main class="container">
@@ -143,7 +169,7 @@
                 aria-expanded="false"
                 aria-controls="collapseOne"
               >
-                Tag 1 - Flug nach Lima
+                Tag 1 | Flug nach Lima
               </button>
             </h2>
             <div
@@ -167,7 +193,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Tag 2 - Lima
+                Tag 2 | Lima
               </button>
             </h2>
             <div
@@ -192,7 +218,7 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Tag 3 - von Lima nach Paracas
+                Tag 3 | mit dem Bus von Lima nach Paracas
               </button>
             </h2>
             <div
@@ -212,21 +238,227 @@
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
+                data-bs-target="#collapseSixteen"
                 aria-expanded="false"
-                aria-controls="collapseFour"
+                aria-controls="collapseSixteen"
               >
-                Fortsetzung folgt...
+                Tag 16 | mit dem Zug von Puno nach Cusco
               </button>
             </h2>
             <div
-              id="collapseFour"
+              id="collapseSixteen"
               class="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body bg-light text-start">
-                Restliche Planung wird noch ergänzt.
+                Wir gönnen uns eine Fahrt mit dem Zug nach Cusco. Genauer mit
+                dem
+                <a
+                  href="https://www.perurail.com/special-offers/perurail-titicaca/"
+                  >Perurail Titicaca</a
+                >
+                von Puno nach Cusco. 10 1/2 Stunden Fahrt mit Unterhaltung sowie
+                Speis & Trank. Fast wie ein RailJet nach Innsbruck, nur leider
+                nehmen sie das Klimaticket nicht.
               </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNineteen"
+                aria-expanded="false"
+                aria-controls="collapseNineteen"
+              >
+                Tag 19 | Lares-Trail: Erste Etappe
+              </button>
+            </h2>
+            <div
+              id="collapseNineteen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body bg-light text-start">
+                Wir gönnen uns eine Fahrt mit dem Zug nach Cusco. Genauer mit
+                dem
+                <a
+                  href="https://www.perurail.com/special-offers/perurail-titicaca/"
+                  >Perurail Titicaca</a
+                >
+                von Puno nach Cusco. 10 1/2 Stunden Fahrt mit Unterhaltung sowie
+                Speis & Trank. Fast wie ein RailJet nach Innsbruck, nur leider
+                nehmen sie das Klimaticket nicht.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwenty"
+                aria-expanded="false"
+                aria-controls="collapseTwenty"
+              >
+                Tag 20 | Lares Trail: Zweite Etappe
+              </button>
+            </h2>
+            <div
+              id="collapseTwenty"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body bg-light text-start">
+                Wir gönnen uns eine Fahrt mit dem Zug nach Cusco. Genauer mit
+                dem
+                <a
+                  href="https://www.perurail.com/special-offers/perurail-titicaca/"
+                  >Perurail Titicaca</a
+                >
+                von Puno nach Cusco. 10 1/2 Stunden Fahrt mit Unterhaltung sowie
+                Speis & Trank. Fast wie ein RailJet nach Innsbruck, nur leider
+                nehmen sie das Klimaticket nicht.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwentyone"
+                aria-expanded="false"
+                aria-controls="collapseTwentyone"
+              >
+                Tag 21 | Lares Trail: Dritte Etappe
+              </button>
+            </h2>
+            <div
+              id="collapseTwentyone"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body bg-light text-start">
+                Wir gönnen uns eine Fahrt mit dem Zug nach Cusco. Genauer mit
+                dem
+                <a
+                  href="https://www.perurail.com/special-offers/perurail-titicaca/"
+                  >Perurail Titicaca</a
+                >
+                von Puno nach Cusco. 10 1/2 Stunden Fahrt mit Unterhaltung sowie
+                Speis & Trank. Fast wie ein RailJet nach Innsbruck, nur leider
+                nehmen sie das Klimaticket nicht.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwentytwo"
+                aria-expanded="false"
+                aria-controls="collapseTwentytwo"
+              >
+                Tag 22 | Lares Trail: Vierte Etappe - Machu Picchu
+              </button>
+            </h2>
+            <div
+              id="collapseTwentytwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body bg-light text-start">
+                Wir gönnen uns eine Fahrt mit dem Zug nach Cusco. Genauer mit
+                dem
+                <a
+                  href="https://www.perurail.com/special-offers/perurail-titicaca/"
+                  >Perurail Titicaca</a
+                >
+                von Puno nach Cusco. 10 1/2 Stunden Fahrt mit Unterhaltung sowie
+                Speis & Trank. Fast wie ein RailJet nach Innsbruck, nur leider
+                nehmen sie das Klimaticket nicht.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwentynine"
+                aria-expanded="false"
+                aria-controls="collapseTwentynine"
+              >
+                Tag 29 bis 32 | Sonnenbaden im Norden Perus
+              </button>
+            </h2>
+            <div
+              id="collapseTwentynine"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body bg-light text-start">
+                Wir gönnen uns eine Fahrt mit dem Zug nach Cusco. Genauer mit
+                dem
+                <a
+                  href="https://www.perurail.com/special-offers/perurail-titicaca/"
+                  >Perurail Titicaca</a
+                >
+                von Puno nach Cusco. 10 1/2 Stunden Fahrt mit Unterhaltung sowie
+                Speis & Trank. Fast wie ein RailJet nach Innsbruck, nur leider
+                nehmen sie das Klimaticket nicht.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThirtythree"
+                aria-expanded="false"
+                aria-controls="collapseThirtythree"
+              >
+                Tag 33 | Flug nach Lima
+              </button>
+            </h2>
+            <div
+              id="collapseThirtythree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body bg-light text-start">...</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFinal"
+                aria-expanded="false"
+                aria-controls="collapsefinal"
+              >
+                Tag 34 | Rückflug nach Wien
+              </button>
+            </h2>
+            <div
+              id="collapseFinal"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body bg-light text-start">...</div>
             </div>
           </div>
         </div>

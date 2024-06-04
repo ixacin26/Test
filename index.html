@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>P E R U @wwweg.at</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -17,78 +12,38 @@
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Auf nach Peru!</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- <li class="nav-item">
+            <!--  <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li> -->
+            </li>  -->
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#map-section"
-                data-bs-toggle="collapse"
-                data-bs-target=".navbar-collapse.show"
-                >Basisinformationen</a
-              >
+              <a class="nav-link" href="#map-section" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Basisinformationen</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Reiseplanung
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reiseplanung</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="#route-section"
-                    data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse.show"
-                    >Übersicht</a
-                  >
+                  <a class="dropdown-item" href="#route-section" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Übersicht</a>
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse.show"
-                    >Blog</a
-                  >
+                  <a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Blog</a>
                 </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse.show"
-                    >Something else here</a
-                  >
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Something else here</a>
                 </li>
               </ul>
             </li>
-            <!-- <li class="nav-item">
+            <!--  <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li> -->
+            </li>  -->
           </ul>
 
-          <!-- <form class="d-flex" role="search">
+          <!--  <form class="d-flex" role="search">
             <input
               class="form-control me-2"
               type="search"
@@ -98,7 +53,7 @@
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
-          </form> -->
+          </form>  -->
         </div>
         <p class="d-flex me-2 mt-3" id="timeToGo"></p>
       </div>
@@ -106,30 +61,15 @@
     <main class="container">
       <div class="hero-section border-bottom mb-3">
         <div class="hero-text">
-          <p class="display-5 text-start text-center fs-3 fw-bolder lh-1">
-            Sabbatical + Schulferien + Jahresurlaub
-          </p>
+          <p class="display-5 text-start text-center fs-3 fw-bolder lh-1">Sabbatical + Schulferien + Jahresurlaub</p>
           <h1 class="display-1 fw-bold">Auf nach Peru!</h1>
         </div>
-        <img
-          src="/img/machu-picchu(2)-43387_1280.jpg"
-          class="img-fluid hero-image"
-          alt="machu-pichu in peru"
-        />
+        <img src="/img/machu-picchu(2)-43387_1280.jpg" class="img-fluid hero-image" alt="machu-pichu in peru" />
       </div>
-      <div
-        class="divide mt-3 shadow p-3 mb-5 bg-body rounded"
-        id="map-section"
-      ></div>
+      <div class="divide mt-3 shadow p-3 mb-5 bg-body rounded" id="map-section"></div>
       <section class="map-section container-fluid column-gap-3">
         <div class="row">
-          <iframe
-            class="map col-12 col-sm-5"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16138235.746583816!2d-85.71219327541768!3d-9.063857748247784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2sPeru!5e0!3m2!1sde!2sat!4v1709320365860!5m2!1sde!2sat"
-            style="border: 0"
-            allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <iframe class="map col-12 col-sm-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16138235.746583816!2d-85.71219327541768!3d-9.063857748247784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2sPeru!5e0!3m2!1sde!2sat!4v1709320365860!5m2!1sde!2sat" style="border: 0" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="info-text align-text-center col-12 col-sm-7 mt-3">
             <h3>Basisinformationen zu Peru</h3>
             <ul class="list-group list-group-flush">
@@ -141,305 +81,133 @@
             </ul>
             <p class="mt-3">
               &copy;
-              <a
-                href="https://w.wiki/9Vm5"
-                target="_blank"
-                rel="noopener noreferrer"
-                >wikipedia</a
-              >
+              <a href="https://w.wiki/9Vm5" target="_blank" rel="noopener noreferrer">wikipedia</a>
             </p>
           </div>
         </div>
       </section>
-      <div
-        class="divide bg-gradient bg-success-subtle mt-3 shadow p-3 mb-5 bg-body rounded"
-        id="route-section"
-      ></div>
+      <div class="divide bg-gradient bg-success-subtle mt-3 shadow p-3 mb-5 bg-body rounded" id="route-section"></div>
 
       <section class="route-section">
         <h2>Reiseplanung</h2>
         <div class="accordion" id="accordionExample">
+          <!-- Tag 1 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="false"
-                aria-controls="collapseOne"
-              >
-                <b>Tag 1&nbsp;</b>|&nbsp;Flug nach Lima
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body text-start bg-light">
-                Die KLM bringt uns von Wien nach Amsterdam und dann weiter nach
-                Lima.
-              </div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>Tag 1&nbsp;</b>|&nbsp;Flug nach Lima</button></h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body text-start bg-light">Die KLM bringt uns von Wien nach Amsterdam und dann weiter nach Lima.</div>
             </div>
           </div>
+          <!-- Tag 2 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                <b>Tag 2&nbsp;</b>|&nbsp;Lima
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body text-start bg-light">
-                Den ersten Tag bleiben wir in Lima - auch die Hauptstadt muss
-                man gesehen haben. Und ausserdem brauchen wir ein paar Basics
-                wie z.B. SIM-Karten.
-              </div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>Tag 2&nbsp;</b>|&nbsp;Lima</button></h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body text-start bg-light">Den ersten Tag bleiben wir in Lima - auch die Hauptstadt muss man gesehen haben. Und ausserdem brauchen wir ein paar Basics wie z.B. SIM-Karten.</div>
             </div>
           </div>
+          <!-- Tag 3 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                <b>Tag 3&nbsp;</b>|&nbsp;mit dem Bus von Lima nach Paracas
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-light text-start">
-                Erstmals geht es mit dem Bus zur nächsten Station - Cruz del Sur
-                bringt uns nach Paracas.
-              </div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>Tag 3&nbsp;</b>|&nbsp;mit dem Bus von Lima nach Paracas</button></h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-light text-start">Erstmals geht es mit dem Bus zur nächsten Station - Cruz del Sur bringt uns nach Paracas.</div>
             </div>
           </div>
+          <!-- Tag 4 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSixteen"
-                aria-expanded="false"
-                aria-controls="collapseSixteen"
-              >
-                <b>Tag 16&nbsp;</b>|&nbsp;mit dem Zug von Puno nach Cusco
-              </button>
-            </h2>
-            <div
-              id="collapseSixteen"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-light text-start">
-                Wir gönnen uns eine Fahrt mit dem Zug nach Cusco. Genauer mit
-                dem
-                <a
-                  href="https://www.perurail.com/special-offers/perurail-titicaca/"
-                  >Perurail Titicaca</a
-                >
-                von Puno nach Cusco. 10 1/2 Stunden Fahrt mit Unterhaltung sowie
-                Speis & Trank. Fast wie ein RailJet nach Innsbruck, nur leider
-                nehmen sie das Klimaticket nicht.
-              </div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><b>Tag 4&nbsp;</b>|&nbsp;Ausflug zu Ballestas Island & Paracas National Reserve</button></h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zu emotiontourperu einfügen -->
+              <div class="accordion-body bg-light text-start">Ein erster Ausflug in die Natur Perus - wir erkunden Ballestas Island und Paracas National Reserve mit Emotiontourperu.</div>
             </div>
           </div>
+          <!-- Tag 5 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseNineteen"
-                aria-expanded="false"
-                aria-controls="collapseNineteen"
-              >
-                <b>Tag 19&nbsp;</b>|&nbsp;Lares-Trail - erste Etappe von Cusco
-                nach Kiswarani
-              </button>
-            </h2>
-            <div
-              id="collapseNineteen"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-light text-start">
-                Auf nach Machu Picchu - aber das will verdient sein! Wir starten
-                unsere 4-tägige Trekking-Tour.
-                <a href="https://abexpeditions.com/es/lares-trekking/"
-                  >AB Expeditions</a
-                >
-                bringt uns zu einem der
-                <a
-                  href="https://world.new7wonders.com/wonders/machu-picchu-1460-1470-peru/"
-                  >neuen sieben Weltwunder</a
-                >.<br />Tag 1 führt uns von Cusco über Lares und Cuncani nach
-                Kiswarani.
-              </div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><b>Tag 5&nbsp;</b>|&nbsp;Ausflug zu Ica Pisco Winery und Huacachina</button></h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zu emotiontourperu einfügen -->
+              <div class="accordion-body bg-light text-start">Weiter geht's mit Besichtigungen - ein peruanisches Weingut und ein Oase in der Wüste erwarten uns. Wir kehren nicht nach Paracas zurück, sondern ziehen dann gleich nach Ica weiter</div>
             </div>
           </div>
+          <!-- Tag 6 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwenty"
-                aria-expanded="false"
-                aria-controls="collapseTwenty"
-              >
-                <b>Tag 20&nbsp;</b>|&nbsp;Lares Trail - zweite Etappe von
-                Kiswarani nach Cancha Cancha
-              </button>
-            </h2>
-            <div
-              id="collapseTwenty"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-light text-start">
-                Die heutige Etappe führt uns auf 4.700m zum Paso de Pachacutec.
-                Hoffentlich trägt die Akklimatisation in Cusco Früchte und wir
-                kommen ohne Höhenkrankheit aus.
-              </div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><b>Tag 6&nbsp;</b>|&nbsp;Ausflug zum Canyon de los Perdidos</button></h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zu emotiontourperu einfügen -->
+              <div class="accordion-body bg-light text-start">Heute schauen wir uns den Canyon de los Perdidos (das Tal der Verlorenen) an. Spät abends geht es dann mit dem Schlafbus von Cruz del Sur weiter nach Arequipa. Das Hotel in Ica haben wir aber eine zusätzliche Nacht gebucht - eine Dusche nach dem Canyon-Ausflug schadet nicht.</div>
             </div>
           </div>
+          <!-- Tag 7 und 8 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwentyone"
-                aria-expanded="false"
-                aria-controls="collapseTwentyone"
-              >
-                <b>Tag 21&nbsp;</b>|&nbsp;Lares Trail - dritte Etappe von Cancha
-                Cancha nach Aguas Calientes
-              </button>
-            </h2>
-            <div
-              id="collapseTwentyone"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-light text-start"></div>
-              Heute ist alles dabei: Wandern, aber auch Auto- und Zugfahrt. Am
-              Ende des Tages sind wir jedenfalls in Aguas Calientes, dem letzten
-              Stopp bevor es zu Machu Picchu geht.
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwentytwo"
-                aria-expanded="false"
-                aria-controls="collapseTwentytwo"
-              >
-                <b>Tag 22&nbsp;</b>|&nbsp;Lares Trail: Vierte Etappe - Machu
-                Picchu und retour nach Cusco
-              </button>
-            </h2>
-            <div
-              id="collapseTwentytwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-light text-start">
-                Am Ziel - Machu Picchu erwartet uns. Es heißt früh aufstehen um
-                den Sonnenaufgang zu erleben. Nach der Besichtigung der
-                Inca-Ruinen besteigen wir noch den Machu Picchu Mountain und
-                dann geht es mit Zug und Bus zurück nach Cusco.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwentynine"
-                aria-expanded="false"
-                aria-controls="collapseTwentynine"
-              >
-                <b>Tag 29 bis 32&nbsp;</b>|&nbsp;Sonnenbaden im Norden Perus
-              </button>
-            </h2>
-            <div
-              id="collapseTwentynine"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body bg-light text-start">
-                Am Ende der Reise geht es um Erholung pur - wir verbringen noch
-                ein paar Tage am Strand im Norden von Peru, bevor es bald wieder
-                mit dem Flugzeug retour nach Europa geht.
-              </div>
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenEight" aria-expanded="false" aria-controls="collapseSevenEight"><b>Tag 7 und 8&nbsp;</b>|&nbsp;Chillen in Arequipa</button></h2>
+            <div id="collapseSevenEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zu emotiontourperu einfügen -->
+              <div class="accordion-body bg-light text-start">Zwei Tage Erholung ohne Plan - mal schauen was sich ergibt. Unsere Kräfte werden wir für den nächsten Ausflug, das erste mehrtätige Trekking brauuchen</div>
             </div>
           </div>
 
+          
+          <!-- Tag 16 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThirtythree"
-                aria-expanded="false"
-                aria-controls="collapseThirtythree"
-              >
-                <b>Tag 33&nbsp;</b>|&nbsp;Flug nach Lima
-              </button>
-            </h2>
-            <div
-              id="collapseThirtythree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen"><b>Tag 16&nbsp;</b>|&nbsp;mit dem Zug von Puno nach Cusco</button></h2>
+            <div id="collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-light text-start">
+                Wir gönnen uns eine Fahrt mit dem Zug nach Cusco. Genauer mit dem
+                <a href="https://www.perurail.com/special-offers/perurail-titicaca/">Perurail Titicaca</a>
+                von Puno nach Cusco. 10 1/2 Stunden Fahrt mit Unterhaltung sowie Speis & Trank. Fast wie ein RailJet nach Innsbruck, nur leider nehmen sie das Klimaticket nicht.
+              </div>
+            </div>
+          </div>
+          <!-- Tag 19 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen"><b>Tag 19&nbsp;</b>|&nbsp;Lares-Trail - erste Etappe von Cusco nach Kiswarani</button></h2>
+            <div id="collapseNineteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-light text-start">
+                Auf nach Machu Picchu - aber das will verdient sein! Wir starten unsere 4-tägige Trekking-Tour.
+                <a href="https://abexpeditions.com/es/lares-trekking/">AB Expeditions</a>
+                bringt uns zu einem der
+                <a href="https://world.new7wonders.com/wonders/machu-picchu-1460-1470-peru/">neuen sieben Weltwunder</a>.<br />Tag 1 führt uns von Cusco über Lares und Cuncani nach Kiswarani.
+              </div>
+            </div>
+          </div>
+          <!-- Tag 20 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty"><b>Tag 20&nbsp;</b>|&nbsp;Lares Trail - zweite Etappe von Kiswarani nach Cancha Cancha</button></h2>
+            <div id="collapseTwenty" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-light text-start">Die heutige Etappe führt uns auf 4.700m zum Paso de Pachacutec. Hoffentlich trägt die Akklimatisation in Cusco Früchte und wir kommen ohne Höhenkrankheit aus.</div>
+            </div>
+          </div>
+          <!-- Tag 21 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone"><b>Tag 21&nbsp;</b>|&nbsp;Lares Trail - dritte Etappe von Cancha Cancha nach Aguas Calientes</button></h2>
+            <div id="collapseTwentyone" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-light text-start"></div>Heute ist alles dabei: Wandern, aber auch Auto- und Zugfahrt. Am Ende des Tages sind wir jedenfalls in Aguas Calientes, dem letzten Stopp bevor es zu Machu Picchu geht.
+            </div>
+          </div>
+          <!-- Tag 22 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo"><b>Tag 22&nbsp;</b>|&nbsp;Lares Trail: Vierte Etappe - Machu Picchu und retour nach Cusco</button></h2>
+            <div id="collapseTwentytwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-light text-start">Am Ziel - Machu Picchu erwartet uns. Es heißt früh aufstehen um den Sonnenaufgang zu erleben. Nach der Besichtigung der Inca-Ruinen besteigen wir noch den Machu Picchu Mountain und dann geht es mit Zug und Bus zurück nach Cusco.</div>
+            </div>
+          </div>
+          <!-- Tag 29 - 32 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentynine" aria-expanded="false" aria-controls="collapseTwentynine"><b>Tag 29 bis 32&nbsp;</b>|&nbsp;Sonnenbaden im Norden Perus</button></h2>
+            <div id="collapseTwentynine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-light text-start">Am Ende der Reise geht es um Erholung pur - wir verbringen noch ein paar Tage am Strand im Norden von Peru, bevor es bald wieder mit dem Flugzeug retour nach Europa geht.</div>
+            </div>
+          </div>
+          <!-- Tag 33 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirtythree" aria-expanded="false" aria-controls="collapseThirtythree"><b>Tag 33&nbsp;</b>|&nbsp;Flug nach Lima</button></h2>
+            <div id="collapseThirtythree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body bg-light text-start">...</div>
             </div>
           </div>
+          <!-- Tag 34 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFinal"
-                aria-expanded="false"
-                aria-controls="collapsefinal"
-              >
-                <b>Tag 34&nbsp;</b>|&nbsp;Rückflug nach Wien
-              </button>
-            </h2>
-            <div
-              id="collapseFinal"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFinal" aria-expanded="false" aria-controls="collapsefinal"><b>Tag 34&nbsp;</b>|&nbsp;Rückflug nach Wien</button></h2>
+            <div id="collapseFinal" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body bg-light text-start">...</div>
             </div>
           </div>
@@ -449,11 +217,7 @@
     <footer class="footer text-center fixed-bottom bg-body-tertiary">
       <br />&copy; Klaus Tauber
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="Script.js"></script>
   </body>
 </html>

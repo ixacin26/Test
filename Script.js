@@ -1,3 +1,21 @@
+// JavaScript to collapse the navbar after a link is clicked
+document.querySelectorAll('.navbar-nav .nav-link').forEach(function (element) {
+  element.addEventListener('click', function (event) {
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      var bsCollapse = new bootstrap.Collapse(document.querySelector('#navbarSupportedContent'), {
+          toggle: false
+      });
+      if (window.getComputedStyle(navbarToggler).display !== 'none') {
+          bsCollapse.toggle();
+      }
+      // Allow default behavior to proceed after a slight delay
+      setTimeout(function() {
+          var target = element.getAttribute('href');
+          window.location = target;
+      }, 350);
+  });
+});
+
 //Counter
 var enddateTime = new Date("2024-07-14T06:55:00");
 // Set the date we're counting down to

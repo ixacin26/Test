@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* Considering space of sticky navbar when using nav-links */
+html {
+  scroll-padding-top: 5rem;
+}
+
 main {
   height: 100%;
   width: 90vw;
@@ -64,6 +69,8 @@ main {
 }
 
 @media (max-width: 520px) {
+  
+
   .hero-text h1 {
     font-size: 2.5rem;
   }
@@ -76,6 +83,8 @@ main {
 }
 
 @media (max-width: 360px) {
+
+
   .hero-text h1 {
     font-size: 2.5rem;
   }

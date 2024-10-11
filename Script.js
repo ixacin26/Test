@@ -34,5 +34,9 @@ var x = setInterval(function () {
     clearInterval(x);
     document.getElementById("timeToGo").innerHTML = "Wir sind unterwegs!";
   }
+  if (now > countDownDate) {
+    clearInterval(x);
+    document.getElementById("timeToGo").innerHTML = "Leider ist die Reise schon vorbei!";
+  }
 });
 // ************************************************************

@@ -9,53 +9,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Auf nach Peru!</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!--  <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>  -->
             <li class="nav-item">
-              <a class="nav-link" href="#map-section" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Basisinformationen</a>
+              <a class="nav-link active" aria-current="page" href="#map-section">Basisinformationen</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reiseplanung</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#route-section" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Übersicht</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Blog</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Something else here</a>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#route-section">Reiseplanung</a>
             </li>
-            <!--  <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>  -->
           </ul>
-
-          <!--  <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>  -->
+          <p class="d-flex me-2 mt-3" id="timeToGo"></p>
         </div>
-        <p class="d-flex me-2 mt-3" id="timeToGo"></p>
       </div>
     </nav>
     <main class="container">
@@ -65,7 +35,7 @@
           <h1 class="display-1 fw-bold">Auf nach Peru!</h1>
         </div>
         <img src="/img/machu-picchu(2)-43387_1280.jpg" class="img-fluid hero-image" alt="machu-pichu in peru" />
-      </div>
+      </div><br>
       <div class="divide mt-3 shadow p-3 mb-5 bg-body rounded" id="map-section"></div>
       <section class="map-section container-fluid column-gap-3">
         <div class="row">
@@ -89,11 +59,13 @@
       <div class="divide bg-gradient bg-success-subtle mt-3 shadow p-3 mb-5 bg-body rounded" id="route-section"></div>
 
       <section class="route-section">
-        <h2>Reiseplanung</h2>
+        <h2 id="route-section">Reiseplanung</h2>
         <div class="accordion" id="accordionExample">
           <!-- Tag 1 -->
           <div class="accordion-item">
-            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>Tag 1&nbsp;</b>|&nbsp;Flug nach Lima</button></h2>
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>Tag 1</b>&nbsp;</b>|&nbsp;Flug nach Lima</button>
+            </h2>
             <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body text-start bg-light">Die KLM bringt uns von Wien nach Amsterdam und dann weiter nach Lima.</div>
             </div>
@@ -144,7 +116,30 @@
               <div class="accordion-body bg-light text-start">Zwei Tage Erholung ohne Plan - mal schauen was sich ergibt. Unsere Kräfte werden wir für den nächsten Ausflug, das erste mehrtätige Trekking brauuchen</div>
             </div>
           </div>
-          <!-- TODO fehlende Tage ergänzen -->
+          <!-- Tag 9 bis 12 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineToTwelve" aria-expanded="false" aria-controls="collapseNineToTwelve"><b>Tag 9 - 12&nbsp;</b>|&nbsp;Trekking Tour zum Colca Canyon</button></h2>
+            <div id="collapseNineToTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zu Carlito Tour einfügen -->
+              <div class="accordion-body bg-light text-start">Auf geht's zum ersten längeren Trekking. Mit Carlito Tour geht für 4 Tage zum und in den Colca Canyon. Zum Leidwesen des teilnehmenden Schülers heißt es sehr früh aufstehen, aber als Entschädigung wartet eine wunderschöne Landschaft auf uns. Am Ende der Tour fahren wir nach Puno um uns ein wenig zu erholen.</div>
+            </div>
+          </div>
+          <!-- Tag 13 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen"><b>Tag 13&nbsp;</b>|&nbsp;Chillen in Puno</button></h2>
+            <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zu Wikipedia Puno einfügen -->
+              <div class="accordion-body bg-light text-start">Wir verbringen einen Tag in Puno - ohne Plan und Ziel, um unsere müden Knochen zu regenerieren.</div>
+            </div>
+          </div>
+          <!-- Tag 14 und 15 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteenFifteen" aria-expanded="false" aria-controls="collapseFourteenFifteen"><b>Tag 14 und 15&nbsp;</b>|&nbsp;Tour zum Titicaca See</button></h2>
+            <div id="collapseFourteenFifteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zu Wikipedia Titicaca See einfügen -->
+              <div class="accordion-body bg-light text-start">Diese zwei Tage führen uns zum höchst gelegenen See Südamerikas - dem Titicaca See.</div>
+            </div>
+          </div>
           <!-- Tag 16 -->
           <div class="accordion-item">
             <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen"><b>Tag 16&nbsp;</b>|&nbsp;mit dem Zug von Puno nach Cusco</button></h2>
@@ -153,6 +148,16 @@
                 Wir gönnen uns eine Fahrt mit dem Zug nach Cusco. Genauer mit dem
                 <a href="https://www.perurail.com/special-offers/perurail-titicaca/">Perurail Titicaca</a>
                 von Puno nach Cusco. 10 1/2 Stunden Fahrt mit Unterhaltung sowie Speis & Trank. Fast wie ein RailJet nach Innsbruck, nur leider nehmen sie das Klimaticket nicht.
+              </div>
+            </div>
+          </div>
+          <!-- Tag 17 und 18 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeenEightteen" aria-expanded="false" aria-controls="collapseSeventeenEightteen"><b>Tag 17 und 18&nbsp;</b>|&nbsp;Chillen in Cusco</button></h2>
+            <div id="collapseSeventeenEightteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zu Wikipedia Cusco einfügen -->
+              <div class="accordion-body bg-light text-start">
+                Als Vorbereitung auf den Höhepunkt unserer Peru-Reise verbringen wir zwei ruhige Tage in Cusco.
               </div>
             </div>
           </div>
@@ -189,6 +194,38 @@
               <div class="accordion-body bg-light text-start">Am Ziel - Machu Picchu erwartet uns. Es heißt früh aufstehen um den Sonnenaufgang zu erleben. Nach der Besichtigung der Inca-Ruinen besteigen wir noch den Machu Picchu Mountain und dann geht es mit Zug und Bus zurück nach Cusco.</div>
             </div>
           </div>
+          <!-- Tag 23 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentythree" aria-expanded="false" aria-controls="collapseTwentythree"><b>Tag 23&nbsp;</b>|&nbsp;Chillen in Cusco</button></h2>
+            <div id="collapseTwentythree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-light text-start">Diesen Ruhetag haben wir uns verdient. Mal schauen, ob wir das Hotel überhaupt verlassen - jedenfalls werden wir es sehr ruhig angehen und bleiben einmal 3 Nächte in Cusco.</div>
+            </div>
+          </div>
+          <!-- Tag 24 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyfour" aria-expanded="false" aria-controls="collapseTwentyfour"><b>Tag 24&nbsp;</b>|&nbsp;Wir überlegen noch</button></h2>
+            <div id="collapseTwentyfour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zum endgültigen Ausflugsziel einbinden -->
+              <div class="accordion-body bg-light text-start">Je nach Verfassung planen wir
+                <ul>
+                  <li>nichts oder</li>
+                  <li>einen Ausflug zu den Rainbow Mountains oder</li>
+                  <li>einen Ausflug zu den nahegelegenen Salzminen</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Tag 25 bis 28 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyfiveEight" aria-expanded="false" aria-controls="collapseTwentyfiveEight"><b>Tag 25 bis 28&nbsp;</b>|&nbsp;Regenwald oder Regenwald</button></h2>
+            <div id="collapseTwentyfiveEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!-- TODO Link zu Manu Rainforest einfügen -->
+              <div class="accordion-body bg-light text-start">Auch den Regenwald wollen wir uns nicht entgehen lassen - noch hat sich unser präferierter Anbieter nicht gemeldet, aber wir lassen nicht locker und haben zur Not auch einen Plan B.
+              </div>
+            </div>
+          </div>
+
+
           <!-- Tag 29 - 32 -->
           <div class="accordion-item">
             <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentynine" aria-expanded="false" aria-controls="collapseTwentynine"><b>Tag 29 bis 32&nbsp;</b>|&nbsp;Sonnenbaden im Norden Perus</button></h2>
@@ -216,7 +253,9 @@
     <footer class="footer text-center fixed-bottom bg-body-tertiary">
       <br />&copy; Klaus Tauber
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
     <script src="Script.js"></script>
   </body>
 </html>
